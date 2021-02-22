@@ -74,7 +74,7 @@ class Tabs extends React.Component {
           {this.state.days.map(day => {   
             let date = new Date(day.date);
             return (
-              <div key="{day.heading}" class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+              <div key="{day.heading}" class="flex relative pt-10 pb-20 w-full sm:items-center md:w-2/3 mx-auto">
                 <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                   <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
                 </div>
