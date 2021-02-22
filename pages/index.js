@@ -1,23 +1,25 @@
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
 
-export default function Home() {
+import Tabs from '@components/Tabs'
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+
+    }, // will be passed to the page component as props
+  }
+}
+
+export default function Home({ days }) {
+
   return (
-    <div className="container">
+    <div>
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
-      <Footer />
+    
+      <Tabs />
     </div>
   )
 }
