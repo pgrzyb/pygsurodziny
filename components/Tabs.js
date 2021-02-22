@@ -69,7 +69,7 @@ class Tabs extends React.Component {
 
     return (
       <section class="text-gray-400 bg-gray-900 body-font">
-        <h1 class="font-bold title-font text-white mb-1 text-6xl text-center pt-20">PYGS<span class="text-green-600">Urodziny</span></h1>
+        <h1 class="font-bold title-font text-white mb-1 text-5xl md:text-6xl text-center pt-20">PYGS<span class="text-green-600">Urodziny</span></h1>
         <div class="px-5 py-24 mx-auto flex-wrap flex-row flex">
           {this.state.days.map(day => {   
             let date = new Date(day.date);
