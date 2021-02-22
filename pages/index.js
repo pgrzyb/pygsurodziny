@@ -15,7 +15,7 @@ export default function Home({ days }) {
   return (
     <div>
       <Head>
-        <title>Next.js Starter!</title>
+        <title>PYGSUrodziny! Paulinkowa strona urodzinowa :)</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
     
